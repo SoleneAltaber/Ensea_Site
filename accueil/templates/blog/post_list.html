@@ -1,25 +1,18 @@
+{% load static %}
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Language" content="fr" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Last-Modified" content="Fr, 16 April 2021 09:54:03 +0100" />
-<meta name="Identifier-URL" content="index.php" />
-<meta name="robots" content="index,follow" />
-<meta name="revisit-after" content="2 days" />
 <meta name="AUTHOR" content="ALTABER Solène" />
 <meta property="og:type" content="website" />
 
 
-<link rel="stylesheet" type="text/css" href="../css/cgp4.css">
-<link rel="stylesheet" type="text/css" href="../css/stylephotostack2.css" />
-<link rel="stylesheet" type="text/css" href="../css/overlay.css" />
-<link rel="stylesheet" type="text/css" href="../css/style7.css" />
-<link rel="icon" type="image/png" href="../favicon-196x196.png" sizes="196x196">
-<link rel="icon" type="image/png" href="../favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+<link rel="stylesheet" type="text/css" href="{% static 'css/cgp4.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/stylephotostack2.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/overlay.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style7.css'%}">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="../mstile-144x144.png">
 <!-- TemplateBeginEditable name="doctitle" -->
@@ -33,12 +26,12 @@
 <!-- Bootstrap -->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="{%static 'js/jquery-3.4.1.min.js'%}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap-4.4.1.js"></script>  
-	<script type="text/javascript" src="../js/scripts.js"></script> 
-  <script type="text/javascript" src="../js/tooltip.js"></script> 
+    <script src="{%static 'js/popper.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap-4.4.1.js'%}"></script>  
+	<script type="text/javascript" src="{%static 'js/scripts.js'%}"></script> 
+  <script type="text/javascript" src="{%static 'js/tooltip.js'%}"></script> 
 	<style type="text/css">
 <!--
 
@@ -97,10 +90,8 @@
 			<li class="nav-item">
             <a class="nav-link" href="../contact.html">Contact</a>
           </li>
-          </ul>
-         
+          </ul> 
         </div>
-		  
       </div>
     </nav>	
 
