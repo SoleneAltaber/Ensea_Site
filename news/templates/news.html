@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+</head>
+<body>
+<h1>News de l'ENSEA !!</h1>
+
+{% for post in News %}
+    <h2>{{post.title}}</h2>
+    {{post.text}} <br>
+    <img src="{{post.image.path}}" alt="test_image"> <br>
+    published on {{post.created_date}}
+
+{% endfor %}
+
+</body>
+</html>

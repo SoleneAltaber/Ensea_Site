@@ -1,10 +1,21 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Vie Etudiante</title>
 </head>
 <body>
-$END$
+<h1>Tout savoir sur les associations à l'ENSEA : </h1>
+{% for asso in Asso %}
+    <h2>{{asso.nom_asso}}</h2>
+    {{asso.text}} <br>
+    <img src="{{asso.image}}" alt="image">
+
+    published on {{post.created_date}}
+
+{% endfor %}
+
 </body>
 </html>
